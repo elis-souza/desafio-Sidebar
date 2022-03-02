@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+  }
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: #dce4e3;
+}
+
+/*menu effect*/
+.menuSide.off  {
+    width: 78px;
+}
+
+.menuSide.off .logoTop {
+    display: none;
+}
+
+.menuSide.off .menu-section .hamburger {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 16px;
+    left: 28px;
+}
+
+.menuSide.off .menu-list .iconSearch {
+    padding-top: 66px;
+    padding-left: 10px;
+}
+
+.menuSide.off .menu-list .iconSearch input {
+    outline: none;
+    background-color: #dce4e3;
+    width: 50px;
+    padding-right: 11px;
+}
+
+.menuSide.off .menu-list ul li span {
+    display: none;
+}
+
+.menuSide.off .menu-list .iconSearch img {
+    padding-left: 15px;
+}
+
+.menuSide.off .menu-list ul li img {
+    padding-left: 5px;
+}
+
+.menuSide.off .vetInfo {
+    width: 78px;
+}
+
+.menuSide.off .vetPic {
+    display: none;
+}
+
+.menuSide.off .description {
+    display: none;
+}
+
+.menuSide.off .logOut img {
+    position: absolute;
+    top: 18px;
+    left: 23px;
+}
+
+/*menu effect*/
+
+.menuSide {
+    position: relative;
+    width: 250px;
+    height: 100vh;
+    background-color: #18c29c;
+    transition: all 0.5s ease;
+}
+
+.logoTop img {
+    padding: 1rem 0 0 1rem;
+}
+
+.hamburger {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 16px;
+    left: 190px;
+    transition: all 0.6s ease;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: #084236;
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 5px -5px;
+    transition: all 0.6s ease;
+}
+
+nav .menu-list input{
+    background-color: #8ed7c6;
+    width: 220px;
+    height: 50px;
+    border-radius: 12px;
+    outline: none;
+    padding: 1rem 1rem 1rem 48px;
+    color: #084236;
+    font-size: 15px;
+    font-weight: normal;
+    transition: all 0.5s ease;
+}
+
+
+nav .menu-list ul li {
+    list-style: none;
+    padding: 20px;
+}
+.iconSearch {
+    transition: all 0.5s ease;
+}
+.iconSearch img {
+    position: absolute;
+    padding: 0.8rem 0 0rem 1rem;
+}
+
+nav .menu-list ul li a {
+    color: #084236;
+    text-decoration: none;
+    display: flex;
+}
+
+nav .menu-list ul li a img {
+    padding-right: 14px;
+}
+
+.vetInfo {
+    position: absolute;
+    top: 916px;
+    background-color: #8ed7c6;
+    width: 250px;
+    height: 62px;
+    transition: all 0.5s ease;
+}
+
+.vetPic img {
+    width: 28%;
+    border-radius: 12px;
+    margin-top: 8px;
+    margin-left: 6px;
+}
+
+.description {
+    position: absolute;
+    top: 17px;
+    left: 89px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #084236;
+    line-height: 1rem;
+}
+
+.description span {
+    font-size: 12px;
+    font-weight: normal;
+    color: #084236;
+}
+
+.logOut img {
+    position: absolute;
+    top: 18px;
+    left: 202px;
+}
+
+.title {
+    padding: 0.8rem;
+}
+
+.title h1 {
+    color: #084236;
+    font-size: 25px;
+    font-weight: 500;
+}
